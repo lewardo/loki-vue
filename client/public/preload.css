@@ -1,0 +1,12 @@
+/* preloaded styling to avoid visiblility when vue renderer takes over */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-display: block;
+}
+
+body {
+  background-color: #ede9e8;
+  overflow-x: hidden;
+}

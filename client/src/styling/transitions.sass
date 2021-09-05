@@ -1,0 +1,35 @@
+@keyframes grow-right
+  from
+    transform: translateX(-48px)
+    box-shadow: none
+    width: 0
+  to
+    transform: none
+    box-shadow: 0 0 48px 8px #888
+    width: 72vw
+
+@keyframes scale
+  from
+    transform: scale(0)
+  to
+    transform: scale(100%)
+    
+
+.change-left-leave-from, .change-left-enter-to, .change-right-leave-from, .change-right-enter-to
+  box-shadow: 0 0 48px 8px #888
+  left: 0
+
+.change-left-enter-from, .change-right-leave-to
+  box-shadow: 0 0 48px 8px #888
+  left: -200%
+
+.change-left-leave-to, .change-right-enter-from
+  box-shadow: 0 0 48px 8px #888
+  left: 200%
+
+.fade-up-leave-from, .fade-up-enter-to
+  opacity: 0
+
+.fade-up-leave-to, .fade-up-enter-from
+  opacity: 1
+
